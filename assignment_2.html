@@ -1,0 +1,798 @@
+<!doctype>
+<html>
+
+<head>
+<title>Thaw Zin Htike Practice </title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+
+*{box-sizing:border-box}
+
+.header1{
+width:100%;
+top:0px;
+padding:12px;
+position:fixed;
+background-color:black;
+color:white;
+overflow:hidden;
+}
+
+.header1 a{
+display:none;
+text-decoration:none;
+color:white
+}
+
+.header1 p{
+display:inline-block;
+float:right;
+text-align:right;
+margin:0px
+}
+
+.col-25{
+width:25%;
+top:5%;
+margin-left:0px;
+position:fixed;
+float:left;
+
+}
+
+.profile{
+width:100%;
+border-bottom:1px solid #f1f1f1;
+padding-bottom:10%;
+overflow:hidden;
+}
+
+.avatar1 img {
+width:30%;
+margin-top:30px;
+float:left
+}
+
+
+
+.w{
+width:70%;
+margin-left:30%;
+padding:20px;
+
+}
+
+.w a{
+color:black;
+padding:15px
+}
+
+.w a:hover{
+background-color:darkgray
+}
+
+.dashboard{
+margin-top:5%
+}
+
+.dashboard h4{
+padding:10px
+}
+
+.dashboard .overview{
+background-color:#2196F3; 
+color:white
+}
+
+.dashboard p{
+padding:12px;
+margin:0px;
+}
+
+.dashboard p:hover{
+background-color:darkgray
+}
+
+.col-75{
+width:75%;
+float:left;
+padding:3% 12px;
+margin-left:25%;
+background-color:#f1f1f1
+}
+
+.col-75 h3{
+margin-left:5px
+}
+
+.sq{
+width:100%
+}
+
+.sq1{
+width:24%;
+padding:15px;
+margin-left:5px;
+color:white;
+display:inline-block;
+overflow:hidden
+}
+
+.sq1 i{
+font-size:45px
+}
+
+.sq1 .no{
+float:right;
+padding-top:5px
+}
+
+.sq1 p{
+padding-top:8px;
+font-size:25px
+}
+
+.info{
+width:100%;
+margin-top:10px;
+padding:12px;
+}
+
+.region{
+width:30%;
+float:left;
+overflow:hidden
+}
+
+.map img{
+width:100%
+}
+
+.feed{
+width:70%;
+padding-left:5px;
+overflow:hidden
+}
+
+.tb{
+width:100%;
+overflow:hidden
+}
+
+.tb i{
+padding-left:5px
+}
+
+.tb td{
+padding:5px;
+overflow:hidden
+}
+
+.tb tr:nth-child(odd) {
+background-color:white
+}
+
+.general .rate1{
+width:100%;
+background-color:#9e9e9e
+}
+
+.general .rate2{
+padding:10px;
+color:white;
+text-align:center
+}
+
+.country1{
+width:100%;
+border:1px solid darkgray
+}
+
+.country1 tr:nth-child(odd) {
+background-color:white
+}
+
+.country1 td{
+width:65%;
+padding:10px
+}
+
+.country1 tr:hover{
+background-color:darkgray
+}
+
+.country button{
+margin-top:2%;
+padding:12px;
+border:none;
+background-color:#616161;
+color:white
+}
+
+.country button:hover{
+background-color:darkgray
+}
+
+.user2 ul{
+padding:0px;
+margin:0px;
+}
+
+.user2 ul li{
+width:100%;
+list-style-type:none;
+padding:12px;
+border:1px solid #f1f1f1;
+background-color:white
+}
+
+.user2 li img{
+width:50px
+}
+
+.comment1{
+width:100%;
+padding:5px;
+overflow:hidden
+}
+
+.comment1 img{
+width:10%;
+float:left
+}
+
+.comment2{
+width:90%;
+float:left;
+padding:5px
+}
+
+.footer{
+width:75%;
+float:left;
+margin-left:25%;
+background-color:#f1f1f1
+}
+
+
+.language{
+width:100%;
+background-color:#616161;
+overflow:hidden
+}
+
+.language1{
+width:32%;
+padding:1.5%;
+float:left
+} 
+
+.language1 ul li{
+list-style-type:none;
+padding:15px 0px;
+color:white
+}
+
+.footer1{
+padding:20px;
+background-color:black;
+color:white;
+text-align:center;
+
+}
+ 
+ .footer p{
+padding-top:1.5%
+}
+
+@media screen and (max-width:1000px){
+
+.header1{
+width:100%
+}
+
+.header1 a{
+display:inline-block
+}
+
+.col-25{
+display:none
+}
+
+.col-75{
+width:100%;
+margin-left:0px
+}
+
+.footer{
+width:100%;
+margin-left:0px
+}
+
+}
+
+@media screen and (max-width:400px) {
+
+.sq1{
+display:block;
+width:100%
+}
+
+.region{
+display:block;
+width:100%
+}
+
+.feed{
+display:block;
+width:100%
+}
+
+.comment1{
+display:block;
+width:100%
+}
+
+.comment2{
+display:block;
+width:100%
+}
+
+.language1{
+display:bloack;
+width:100%;
+}
+
+.language1 ul{
+padding:0px
+}
+
+
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+<div class="header1">
+
+ <a>
+ <i class="glyphicon glyphicon-align-justify"> Menue</i>
+
+ </a>
+ <p>LOGO</p>
+ 
+
+
+</div>
+
+<div class="col-25">
+
+  <div class="profile">
+
+   <div class="avatar1">
+  
+    <img src="avatar1.png" />
+    
+	 <div class="w">
+	
+        <p>WELCOME.MIKE</p> 
+         
+         <a href=""><i class="glyphicon glyphicon-envelope"></i></a>
+		
+		 <a href=""><i class="glyphicon glyphicon-user"></i></a>
+		
+		 <a href=""><i class="glyphicon glyphicon-cog"></i></a>
+
+  
+     </div>
+	  
+   </div>
+
+  </div>
+
+<div class="dashboard">
+
+     <h4>Dashboard</h4>
+
+     <p class="overview"><i class="glyphicon glyphicon-search"></i>&nbsp Overview</p>  
+	   
+     <p><i class="glyphicon glyphicon-eye-open"></i>&nbsp Views</p> 
+		 
+     <p><i class="glyphicon glyphicon-th-list"></i>&nbsp Traffic</p> 
+		   
+	 <p><i class="glyphicon glyphicon-globe"></i>&nbsp Geo</p> 
+			 
+	 <p><i class="glyphicon glyphicon-list-alt"></i>&nbsp Orders</p> 
+			   
+     <p><i class="glyphicon glyphicon-bell"></i>&nbsp News</p> 
+				 
+	 <p><i class="	glyphicon glyphicon-modal-window"></i>&nbsp General</p> 
+				   
+	 <p><i class="glyphicon glyphicon-repeat"></i>&nbsp History</p> 
+	 
+	 <p><i class="glyphicon glyphicon-cog"></i>&nbsp Setting</p>
+
+</div>
+
+
+</div>
+
+<div class="col-75">
+
+     <h3><i class="	glyphicon glyphicon-picture">My Dashboard</i></h3>
+  
+       <div class="sq">
+         
+		 <div class="sq1" style="background-color:#f44336"> 
+		  
+		     <i class="glyphicon glyphicon-comment"></i><p class="no" style="font-size:20px">52</p>
+			 
+			 <p>Messages</p>
+
+         </div>
+		 
+		 <div class="sq1" style="background-color:#2196F3"> 
+		  
+		     <i class="glyphicon glyphicon-eye-open"></i><p class="no" style="font-size:20px">99</p>
+			 
+			 <p>Views</p>
+
+         </div>
+		 
+		 <div class="sq1" style="background-color:#009688"> 
+		  
+		     <i class="glyphicon glyphicon-send"></i><p class="no" style="font-size:20px">23</p>
+			 
+			 <p>Shares</p>
+
+         </div>
+		 
+		 <div class="sq1" style="background-color:#ff9800"> 
+		  
+		     <i class="glyphicon glyphicon-user"></i><p class="no" style="font-size:20px">50</p>
+			 
+			 <p>Users</p>
+
+         </div>
+
+       </div>
+	   
+
+	   <div class="info" style="margin-bottom:5%">
+
+        
+         <div class="region">
+		  
+		     <h1 style="font-size:20px">Regions</h1>
+			
+			 <div class="map"> 
+			
+			 <img src="region.jpg"/>
+			
+			 <p>Google Regional Map</p>
+			
+			 </div>
+		 
+		 </div>
+       
+         <div class="feed">
+		 	 
+			 <h1 style="font-size:20px">Feeds</h1>
+			 
+		     <table class="tb">
+			  
+			     <tr>
+				 
+				 <td><i class="glyphicon glyphicon-user" style="font-size:15px; color:#2196F3"></i></td> 
+				 <td><p style="padding-left:10%">New record, over 90 views.</p></td> 
+				 <td><p>10 mins</p></td>
+				 
+				 </tr>
+				 
+				 <tr>
+				 
+				 <td><i class="glyphicon glyphicon-bell" style="font-size:15px; color:#f44336"></i></td> 
+				 <td><p style="padding-left:10%">Database error.</p></td> 
+				 <td><p>15 mins</p></td>
+				 
+				 </tr>
+				 
+				 <tr>
+				 
+				 <td><i class="glyphicon glyphicon-signal" style="font-size:15px; color:#d2be0e"></i></td> 
+				 <td><p style="padding-left:10%">New record, over 40 users.</p></td> 
+				 <td><p>17 mins</p></td>
+				 
+				 </tr>
+				 
+				 <tr>
+				 
+				 <td><i class="glyphicon glyphicon-comment" style="font-size:15px; color:#f44336"></i></td> 
+				 <td><p style="padding-left:10%">New comments.</p></td> 
+				 <td><p>25 mins</p></td>
+				 
+				 </tr>
+				 
+				 <tr>
+				 
+				 <td><i class="glyphicon glyphicon-bookmark" style="font-size:15px; color:#2196F3"></i></td> 
+				 <td><p style="padding-left:10%">Check transactions.</p></td> 
+				 <td><p>28 mins</p></td>
+				 
+				 </tr>
+				 
+				 <tr>
+				 
+				 <td><i class="glyphicon glyphicon-warning-sign" style="font-size:15px; color:#f44336"></i></td> 
+				 <td><p style="padding-left:10%">CPU overload.</p></td> 
+				 <td><p>35 mins</p></td>
+				 
+				 </tr>
+				 
+				 <tr>
+				 
+				 <td><i class="glyphicon glyphicon-send" style="font-size:15px; color:#4CAF50"></i></td> 
+				 <td><p style="padding-left:10%">New shares.</p></td> 
+				 <td><p>39 mins</p></td>
+				 
+				 </tr>
+				 
+				 
+			 
+			 </table>
+			 
+			     
+         </div> 
+		 
+			 
+       </div>
+
+     
+     <div class="general" style="margin-bottom:5%">
+
+         <h1 style="font-size:20px">General States</h1>
+		 
+		 <div class="rate">
+		     
+             <h2 style="font-size:15px">New Visitors</h2>
+			 
+			 <div class="rate1">
+			 
+			     <div class="rate2" style="width:25%; background-color:#4CAF50">+25%</div>
+			 
+			 </div>
+			 
+			 <h2 style="font-size:15px">New Users</h2>
+			 
+			 <div class="rate1">
+			 
+			     <div class="rate2" style="width:50%; background-color:#ff9800; color:black">50%</div>
+			 
+			 </div>
+			 
+			 <h2 style="font-size:15px">Bounce Rate</h2>
+			 
+			 <div class="rate1">
+			 
+			     <div class="rate2" style="width:75%; background-color:#f44336">75%</div>
+			 
+			 </div>
+
+    
+         </div>
+
+     </div>	 
+	 
+	 
+	 <div class="country" style="margin-bottom:5%">
+	 
+	     <h1 style="font-size:20px">Countries</h1>
+	 
+	     <table class="country1">   
+		 
+		     <tr>
+				 <td>United States</td>
+				 <td>65%</td>
+	         </tr>
+			 
+			  <tr>
+				 <td>UK</td>
+				 <td>15.7%</td>
+	         </tr>
+			 
+			  <tr>
+				 <td>Russia</td>
+				 <td>5.6%</td>
+	         </tr>
+			 
+			  <tr>
+				 <td>Spain</td>
+				 <td>2.1%</td>
+	         </tr>
+			 
+			  <tr>
+				 <td>India</td>
+				 <td>1.9%</td>
+	         </tr>
+			 
+			  <tr>
+				 <td>France</td>
+				 <td>1.5%</td>
+	         </tr>
+	 
+	     </table>
+		 
+		 <button>More Countries &nbsp <i class="glyphicon glyphicon-arrow-right"></i></button>
+	 
+	 </div>
+	 
+	 
+	 <div class="user1" style="margin-bottom:5%">
+	 
+	     <h1 style="font-size:20px">Recent Users</h1>
+		 
+		 <div class="user2">
+		
+		     <ul> 	   
+			 
+			     <li>
+				 
+				     <img src="avatar2.png"/>
+				 
+				     <span style="font-size:30px">Mike</span>
+				 
+				 </li>
+				 
+				 <li>
+				 
+				     <img src="avatar3.png"/>
+				 
+				     <span style="font-size:30px">Jill</span>
+				 
+				 </li>
+				 
+				 <li>
+				 
+				     <img src="avatar5.png"/>
+				 
+				     <span style="font-size:30px">Jane</span>
+				 
+				 </li>
+			 
+			 
+			 
+			 </ul>
+		 
+         </div>
+		 
+	 	 
+	 </div>
+	 
+	 
+	 <div class="recent"  style="margin-bottom:5%">
+	 
+	     <h2 style="font-size:20px">Recent Comments</h2>
+	 
+	     
+		 <div class="comment1">
+			 
+			 <img src="avatar5.png"/>
+			 
+			 <div class="comment2">
+				 
+			     <h2 style="font-size:20px">John 
+				 <span style="font-size:15px; color:darkgray">Sep 29, 2014, 9:12 PM</span>
+				 </h2> 
+				 
+				 <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                 </p>
+				 
+			</div> 
+		 
+		 </div>
+		 
+		  <div class="comment1">
+			 
+			 <img src="avatar3.png"/>
+			 
+			 <div class="comment2">
+				 
+			     <h2 style="font-size:20px">Bo 
+				 <span style="font-size:15px; color:darkgray">Sep 28, 2014, 10:15 PM</span>
+				 </h2> 
+				 
+				 <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                 </p>
+				 
+			</div> 
+		 
+		 </div>
+	 
+	 </div>
+	 
+
+</div>
+
+    
+<div class="footer">	
+	 
+	 
+      <div class="language">
+	 
+	     <div class="language1">
+		 
+		     <ul> 
+			 
+			     <li style="font-size:20px; border-bottom:5px solid #4CAF50">Demographic</li>
+			 
+			     <li>Language</li>
+			 
+			     <li>Country</li>
+				 
+				 <li>City</li>
+			 
+			 </ul>
+		 
+		 </div>
+		 
+		  <div class="language1">
+		 
+		     <ul> 
+			 
+			     <li style="font-size:20px; border-bottom:5px solid #f44336">System</li>
+			 
+			     <li>Browser</li>
+			 
+			     <li>OS</li>
+				 
+				 <li>More</li>
+			 
+			 </ul>
+		 
+		 </div>
+		 
+		  <div class="language1">
+		 
+		     <ul> 
+			 
+			     <li style="font-size:20px; border-bottom:5px solid #ff9800">Target</li>
+			 
+			     <li>Users</li>
+			 
+			     <li>Active</li>
+				 
+				 <li>Geo</li>
+				 
+				 <li>Interests</li>
+			 
+			 </ul>
+		 
+		 </div>
+	 
+	 
+	 </div>
+	 
+	 
+	 <div class="footer1">
+	 
+	     <h3 style="font-size:20px">FOOTER</h3>
+	  
+	     <p>Powered by Thaw Zin Htike</p>
+	 
+	 </div>
+	  
+	  
+</div>
+
+</body>
+
+</html>
